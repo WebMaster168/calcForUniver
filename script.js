@@ -12,7 +12,7 @@ function deleteLast() {
   display.value = display.value.slice(0, -1);
 }
  
-// --- ПРОЦЕНТЫ КАК В IOS ---
+// --- ПРОЦЕНТЫ ---
 function processPercent(expression) {
   return expression.replace(/(\d+(\.\d+)?)%/g, (match, number, _, offset, full) => {
     const before = full.slice(0, offset);
@@ -47,7 +47,7 @@ function processPercent(expression) {
   });
 }
  
-// --- БЕЗ eval ---
+// --- Подсчёт ---
 function calculate() {
   try {
     let expr = display.value;
