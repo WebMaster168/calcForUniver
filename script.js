@@ -19,7 +19,7 @@ function processPercent(expression) {
  
     // ищем последний оператор
     const operatorMatch = before.match(/[\+\-\*\/](?!.*[\+\-\*\/])/);
- 
+    //ищет один из операторов + - * /
     const num = parseFloat(number);
  
     if (!operatorMatch) {
